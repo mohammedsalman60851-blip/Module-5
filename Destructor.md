@@ -21,9 +21,23 @@ The program defines a class `Demo` with:
    - Create an instance of the `Demo` class.
    - Delete the object using the `del` keyword.
 ## Program
-Add code Here
+class Demo:
+    def __init__(self):
+        self.value = 10
+        print("Constructor called")
+
+    def __del__(self):
+        print("Destructor called")
+
+obj = Demo()
+print("Value:", obj.value)
+del obj
 
 ## 🧪 Output
+Constructor called
+Value: 10
+Destructor called
 
 ## Result
+Thus, the constructor and destructor were implemented successfully in Python.
 
