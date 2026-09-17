@@ -24,6 +24,32 @@ To write a Python program to calculate **Add, Sub & Division** using **Multiple 
    - Display the results of the three operations.
 
 ## 💻 Program 
-Add code here
-## Output Example
+class Add:
+    def add(self, a, b):
+        print("Addition:", a + b)
+
+class Sub:
+    def sub(self, a, b):
+        print("Subtraction:", a - b)
+
+class Division(Add, Sub):
+    def div(self, a, b):
+        print("Division:", a / b)
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+obj = Division()
+obj.add(a, b)
+obj.sub(a, b)
+obj.div(a, b)
+## Output 
+Enter first number: 20
+Enter second number: 5
+Addition: 25.0
+Subtraction: 15.0
+Division: 4.0
+
+## result 
+Thus, the Python program to calculate Addition, Subtraction and Division using multiple inheritance was executed successfully.
 
